@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import logo from '../imgs/logowhite.png';
-import '../Navbar.css';
+import '../styling/Navbar.css';
 
 function NavComponent() {
     return (
