@@ -1,19 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar } from 'react-bootstrap';
 import logo from '../imgs/logowhite.png';
-import '../styling/Navbar.css';
+import '../styling/navbar.css';
 
 function NavComponent() {
     return (
         <div className="Row">
-            <div className="col-md-5 offset-md-2">
-                <Navbar bg="clear" variant="light" sticky="top" expand="sm" collapseOnSelect>
+            <div className="col-md-5 offset-md-1">
+                <Navbar bg="clear" sticky="top" expand="sm" collapseOnSelect >
                     <Navbar.Brand id="logo">
                         <img src={logo} alt="logo" width="75px" height="75px" />
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
-                        <Nav>
+                        <Nav style={{ fontWeight: "bold" }}>
                             <Nav.Link href='/'>Home</Nav.Link>
                             <Nav.Link href='/About'>About Us</Nav.Link>
                             <Nav.Link href='/Contact'>Contact</Nav.Link>
@@ -21,7 +21,7 @@ function NavComponent() {
                     </Navbar.Collapse>
                 </Navbar>
             </div>
-        </div>
+        </div >
     );
 }
 export default NavComponent;

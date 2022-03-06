@@ -2,7 +2,7 @@ import NavComponent from "./Navbar";
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Footer from "./Footer";
-import '../styling/Contact.css';
+import '../styling/contact.css';
 function Contact() {
     const [toSend, setToSend] = useState({
         from_name: '',

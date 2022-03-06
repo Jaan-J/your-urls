@@ -25,7 +25,6 @@ function Footer() {
                         <p>Mississauga, ON</p>
                     </div>
                 </div>
-
             </div>
 
         </footer>
