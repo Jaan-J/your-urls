@@ -8,10 +8,10 @@ import goingLive from "../imgs/goingLive.png";
 import Testimonials from "./Testimonials";
 function Home() {
     return (
-        <div style={{ height: "100vh" }}>
+        <div id="body">
             <div className="container-fluid">
-                <div className="row" style={{ height: "500px" }}>
-                    <div className="col-12 img-fluid" style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+                <div className="row homePic">
+                    <div className="bg col-12 img-fluid" style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                         <NavComponent />
                         <div className="col-md-6 offset-sm-2 offset-xs-3">
                             <div className="display-3 text-sm-left homeText" >
@@ -25,23 +25,23 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="container" style={{ padding: "10%" }}>
+            <div className="container">
                 <div className="row">
-                    <div className="whatWeDo">
+                    <div className="whyUs">
                         <div className="d-flex justify-content-center">
-                            <div className="display-5" style={{ fontWeight: "400" }}>What We Do</div>
+                            <div className="display-4" >Why Pick Us?</div>
                         </div>
                         <div className='row text-center'>
-                            <div className='col-md-5 col-lg-5 col-xl-7 mx-auto mt-3'>
-                                <p>We create websites for our clients to suit their needs. Just tell us what your website will
-                                    be used for and what content to include, and we’ll create a personalized website just for you.
-                                    Leave the design, branding, and development to us.</p>
+                            <div className='col-md-10 col-lg-10 col-xl-10 mx-auto mt-3'>
+                                <div className="display-6">We give 100% Ownership rights to our clients, and charge no monthly,
+                                    quarterly or yearly fees that may be of surprise. Not only that, but we offer free lifetime
+                                    maintenence and only charge for major changes.</div>
                             </div>
                         </div>
                     </div>
                     <div className="processInfo">
                         <div className="d-flex justify-content-center">
-                            <div className="display-6" style={{ fontWeight: "400" }}>Our Process</div>
+                            <div className="display-6">Our Process</div>
                         </div>
                         <div className='row text-center text-md-left'>
                             <div className='col-md-4 col-lg-4 col-xl-4 mx-auto mt-3'>
@@ -67,13 +67,12 @@ function Home() {
                     </div>
                     <div className="testimonialRecomendations">
                         <div className="d-flex justify-content-center">
-                            <div className="display-3" style={{ fontWeight: "400" }}>Testimonials</div>
+                            <div className="display-3">Testimonials</div>
                         </div>
                         <div >
                             <Testimonials />
                         </div>
                     </div>
-
                 </div>
             </div>
             <Footer />
