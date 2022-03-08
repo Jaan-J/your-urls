@@ -8,6 +8,17 @@
     font-size: 1.5em;
     color: white;
 }
-.processInfo{
-    margin-top: 5%;
+.processInfo, .whatWeDo, .testimonialRecomendations{
+    margin: auto;
+    padding: 2%;
+}
+.processInfo .display-6{
+    padding: 5%;
+}
+
+.whatWeDo .display-5{
+    padding-bottom: 5%;
+}
+.testimonialRecomendations .display-3{
+    padding-top: 5%;
 }
