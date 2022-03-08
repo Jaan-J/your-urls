@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar } from 'react-bootstrap';
-import logo from '../imgs/logowhite.png';
+import logo from '../imgs/logofullblack.png';
 import '../styling/navbar.css';
 
 function NavComponent() {

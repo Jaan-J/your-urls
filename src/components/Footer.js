@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { BsFillPinMapFill, BsTelephone } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
-import logo from '../imgs/logowhite.png';
+import logo from '../imgs/logofullwhite.png';
 
 function Footer() {
     return (
