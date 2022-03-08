@@ -6,6 +6,7 @@ import planning from "../imgs/planning.png";
 import development from "../imgs/development.png";
 import goingLive from "../imgs/goingLive.png";
 import Testimonials from "./Testimonials";
+import logo from '../imgs/logocleanwhite.png';
 function Home() {
     return (
         <div id="body">
@@ -13,10 +14,10 @@ function Home() {
                 <div className="row homePic">
                     <div className="bg col-12 img-fluid" style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                         <NavComponent />
+                        <div className="logoPlacement col-md-5 offset-sm-1 offset-xs-1">
+                            <img src={logo} alt="logo" />
+                        </div>
                         <div className="col-md-6 offset-sm-2 offset-xs-3">
-                            <div className="display-3 text-sm-left homeText" >
-                                Your<br></br>URLs
-                            </div>
                             <div className="display-6 col-sm-6 homeText2">
                                 <p>YourURLs is a business run by brilliant software development students looking to gain
                                     experience and showcase their skills at an affordable price.</p>
