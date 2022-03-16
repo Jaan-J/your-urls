@@ -1,21 +1,19 @@
-.carousel-item{
+.carousel-item{ /*testimonial text box */
     height: 20rem;
     color: black;
     position: relative;
     text-align: center;
-
-    
 }
-.carousel .carousel-indicators li {
+.carousel .carousel-indicators li { /* testimonial dots */
     background-color: grey;
 }
-.carousel .carousel-indicators li.active {background-color: black;}
+.carousel .carousel-indicators li.active {background-color: black;} /* testimonial active dot */
 
-.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon { /* testimonial arrows */
     background-color: black;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) { /* testimonial  on mobile */
     .carousel-item {
         height: 50rem;
     }
