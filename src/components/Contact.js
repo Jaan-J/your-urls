@@ -4,13 +4,13 @@ import { send } from 'emailjs-com';
 import Footer from "./Footer";
 import '../styling/contact.css';
 function Contact() {
-    const [toSend, setToSend] = useState({
+    const [toSend, setToSend] = useState({ //toSend is object that holds the values of the form
         from_name: '',
         message: '',
         reply_to: '',
     });
 
-    const onSubmit = (e) => {
+    const onSubmit = (e) => { //handles submission
         e.preventDefault();
 
         if (toSend.fromName === '' && toSend.message === '' && toSend.reply_to === '') {
@@ -23,28 +23,28 @@ function Contact() {
             document.getElementById('noEmail').style.display = "block";
         } else {
             send(
-                'service_nrvurka',
-                'template_xybggwf',
-                toSend,
-                'l6OMx-xwhYtTURrfb'
+                'service_nrvurka',//service id
+                'template_xybggwf', // template id
+                toSend, // data to send from_name(from the person), message, reply_to(email they provided)
+                'l6OMx-xwhYtTURrfb' // user id
             )
-                .then((response) => {
+                .then((response) => { //if fulfilled 
                     console.log('SUCCESS!', response.status, response.text);
                     document.getElementById('success').style.display = "block";
                 })
-                .catch((err) => {
+                .catch((err) => { //if failed
                     console.log('FAILED...', err);
+                    document.getElementById('notSent').style.display = "block";
                 });
-
         }
     };
 
-    const handleChange = (e) => {
+    const handleChange = (e) => { //updates the state of the useState object toSend
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
     return (
-        <div>
+        <div class="animate__animated  animate__backInRight">
             <NavComponent />
             <div className="d-flex justify-content-center">
                 <h1>Lets get started!</h1>
@@ -101,6 +101,10 @@ function Contact() {
                         <div className="alert alert-success" id='success' role="alert" style={{ display: "none" }}>
                             <a href='/Contact' className='close' data-dismiss='alert' aria-label='close'>&times;</a>
                             Message sent.
+                        </div>
+                        <div className="alert alert-danger" id='notSent' role="alert" style={{ display: "none" }}>
+                            <a href='/Contact' className='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                            Message not sent, please try again.
                         </div>
                     </div>
                 </div>
