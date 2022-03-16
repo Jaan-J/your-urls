@@ -13,7 +13,7 @@ function NavComponent() {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
-                        <Nav style={{ fontWeight: "bold" }}>
+                        <Nav>
                             <Nav.Link href='/'>Home</Nav.Link>
                             <Nav.Link href='/About'>About Us</Nav.Link>
                             <Nav.Link href='/Contact'>Contact</Nav.Link>
@@ -21,7 +21,7 @@ function NavComponent() {
                     </Navbar.Collapse>
                 </Navbar>
             </div>
-        </div >
+        </div>
     );
 }
 export default NavComponent;
