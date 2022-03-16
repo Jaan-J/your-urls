@@ -1,30 +1,32 @@
-.homeText{
-    margin-top: 15%;
-    color: white;
-}
-.homeText2{
+.homeText{ /* text on background */
     margin-top: -15%;
     margin-bottom: 6%;
     font-size: 1.5em;
     color: white;
 }
-.processInfo, .whatWeDo, .testimonialRecomendations{
-    margin: auto;
-    padding: 2%;
+
+.whyUs{ /*why pick us div */
+    margin-top: 5%;
 }
-.processInfo .display-6{
+
+.processInfo, .whatWeDo, .testimonialRecomendations{ /* space divs */
+    padding: 5%;
+    margin: auto;
+}
+.processInfo .display-6{ /* our process  header */
     padding: 5%;
     font-weight: 400;
 }
 
-.whyUs .display-4{
+.processInfo img{ /* our process images */
+    width: 25%;
+}
+
+.whyUs .display-4{ /* why pick us header */
     padding-bottom: 5%;
     font-weight: 400;
 }
-.testimonialRecomendations .display-3{
+.testimonialRecomendations .display-3{ /* testimonial header */
     padding-top: 5%;
     font-weight: 400;
-}
-.whyUs{
-    margin-top: 5%;
 }
