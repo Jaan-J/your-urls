@@ -2,9 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import './styling/App.css';
-
-
 
 function App() {
   return (
