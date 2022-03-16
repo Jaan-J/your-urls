@@ -9,8 +9,8 @@ function Footer() {
         <footer className='bg-dark text-white pt-1 pb-1'>
             <div className='container text-center text-md-left'>
                 <div className='row text-center text-md-left'>
-                    <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
-                        <img src={logo} alt="logo" width="50 px" height="50px" />
+                    <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-2'>
+                        <img src={logo} alt="logo" width="25%" />
                     </div>
                     <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mt-3'>
                         <BsTelephone />
