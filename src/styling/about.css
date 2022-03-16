@@ -1,11 +1,15 @@
-.ourTeam{
+.meetOurTeam{ /* meet our team header */
     padding: 0.5em;
     margin-top: 0.5em;
     font-size: 1.7rem;
 }
-.details .display-6{
+.details .display-6{ /* who are we/what we do */
     padding: 20px;
     margin-top: 0.1em;
     margin-bottom: 20px;
     font-size: 1.2rem;
+}
+.teamInfo img{ /* sets avatar size and makes it circular */
+    width: 50%;
+    border-radius: 50%;
 }
